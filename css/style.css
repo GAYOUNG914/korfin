@@ -1,0 +1,569 @@
+@charset "UTF-8";
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"); font-face 이용*/
+/*initial*/
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/NotoSansKR-Black.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/NotoSansKR-Bold.otf) format("opentype");
+  /* font-weight: bold; */
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/NotoSansKR-Light.otf) format("opentype");
+  /* font-weight: lighter; */
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/NotoSansKR-Medium.otf) format("opentype");
+  /* font-weight: normal; */
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/NotoSansKR-Thin.otf) format("opentype");
+}
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url(../font/Noto_Sans_KR/NotoSansKR-Regular.otf) format("opentype");
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select {
+  font-family: "Noto Sans KR";
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  /* overflow-x: hidden; */
+}
+
+body {
+  background-color: #fff;
+}
+
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+table {
+  border-spacing: 0;
+}
+
+select:focus {
+  outline: none;
+}
+
+/*index_about page start*/
+/*index content(main)*/
+/*first section*/
+section#first .sec_con {
+  margin-top: 130px;
+}
+
+section#first .sec_con .items > li,
+section#second .sec_con .sub_con .items li {
+  width: 50%;
+  padding-top: 128px;
+}
+
+section#first .sec_con .items > li:nth-of-type(3),
+section#first .sec_con .items > li:nth-of-type(4) {
+  margin-top: 100px;
+}
+
+section#first.first_about .sec_con .items > li:first-child {
+  background: url(../img/icon-found-01.png) center top no-repeat;
+}
+
+section#first.first_about .sec_con .items > li:nth-of-type(2) {
+  background: url(../img/icon-found-02.png) center top no-repeat;
+}
+
+section#first.first_about .sec_con .items > li:nth-of-type(3) {
+  background: url(../img/icon-found-03.png) center top no-repeat;
+}
+
+section#first.first_about .sec_con .items > li:nth-of-type(4) {
+  background: url(../img/icon-found-04.png) center top no-repeat;
+}
+
+/*second section*/
+section#second .sec_con {
+  margin-top: 100px;
+}
+
+section#second .sec_con .sub_con:last-child {
+  margin-top: 160px;
+}
+
+/*banner*/
+
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 459px;
+  background: url(../img/img-vision-01.png) no-repeat;
+  top: 0;
+}
+
+.banner1 {
+  background-position: right;
+}
+
+.banner2 {
+  background: url(../img/img-vision-02.png) left no-repeat;
+}
+
+.banner .banner_tit {
+  position: absolute;
+  bottom: 0;
+  color: #111;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.banner1 .banner_tit {
+  right: 450px;
+}
+
+.banner2 .banner_tit {
+  left: 459px;
+}
+
+section#second .sec_con .sub_con .items {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-top: 160px;
+}
+
+section#second .sec_con .sub_con .items li {
+  width: 33.3%;
+  padding-top: 128px;
+}
+
+/*이용자가 중심이되는 디지털 금융 혁신*/
+
+section#second .sec_con .sub_con:first-child .items li:first-child {
+  background: url(../img/icon-vision-01.png) center top no-repeat;
+}
+
+section#second .sec_con .sub_con:first-child .items li:nth-of-type(2) {
+  background: url(../img/icon-vision-02.png) center top no-repeat;
+}
+
+section#second .sec_con .sub_con:first-child .items li:nth-of-type(3) {
+  background: url(../img/icon-vision-03.png) center top no-repeat;
+}
+
+/*창의적이고 역동적인 핀테크 생태계 조성*/
+
+section#second .sec_con .sub_con:nth-of-type(2) .items li:first-child {
+  background: url(../img/icon-ecosystem-01.png) center top no-repeat;
+}
+
+section#second .sec_con .sub_con:nth-of-type(2) .items li:nth-of-type(2) {
+  background: url(../img/icon-ecosystem-02.png) center top no-repeat;
+}
+
+section#second .sec_con .sub_con:nth-of-type(2) .items li:nth-of-type(3) {
+  background: url(../img/icon-ecosystem-03.png) center top no-repeat;
+}
+/*index_member page start*/
+/*index content(main)*/
+/*first section*/
+
+section#first .sec_tit_wrap {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+}
+
+section#first h3 {
+  float: left;
+  display: inline-block;
+}
+
+section#first .download {
+  overflow: hidden;
+  float: right;
+  display: inline-block;
+}
+
+section#first .download:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section#first .download li {
+  overflow: hidden;
+  float: left;
+  margin-left: 30px;
+}
+
+section#first .download li:first-child {
+  margin-left: 0;
+}
+
+section#first .download li a {
+  font-size: 18px;
+  background: url(../img/icon-download-pc-black.png) no-repeat;
+  height: 24px;
+  padding-left: 24px;
+}
+
+section#first .download li a span {
+  margin-left: 8px;
+}
+
+section#first .sec_con_member {
+  margin-top: 145px;
+}
+
+/* section#first .sec_con .items .text {
+  display: inline-block;
+  padding-top: 270px;
+  width: 270px;
+  height: 270px;
+  border-radius: 100%;
+  border: 1px solid #d8d8d8;
+  background: url(../img/icon-member-01.png) center center no-repeat;
+  box-sizing: border-box;
+} */
+/*위에거는 원 너비 높이 때문에 할 수 가 없음 ㅠㅠㅠ*/
+
+section#first .sec_con_member .items li .icon {
+  display: inline-block;
+  padding-top: 270px;
+  width: 270px;
+  height: 270px;
+  border-radius: 100%;
+  border: 1px solid #d8d8d8;
+  background: url(../img/icon-member-01.png) center center no-repeat;
+  box-sizing: border-box;
+}
+
+section#first .sec_con_member .items li:nth-of-type(2) .icon .icon_bg {
+  background: url(../img/icon-member-02.png) center center no-repeat;
+}
+section#first .sec_con_member .items li:nth-of-type(3) .icon .icon_bg {
+  background: url(../img/icon-member-03.png) center center no-repeat;
+}
+
+section#first .sec_con_member .items li {
+  width: 33.3%;
+  overflow: hidden;
+}
+
+section#first .sec_con_member .items li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section#first .sec_con_member .items li:nth-of-type(2):before,
+section#first .sec_con_member .items li:nth-of-type(3):before {
+  content: "";
+  display: inline-block;
+  float: left;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #154eab;
+  margin-top: 127px;
+}
+
+section#first .sec_con_member .items li:nth-of-type(3) {
+  margin-top: 0;
+}
+
+section#first .sec_con_member .items .icon img {
+  line-height: 270px;
+}
+
+/*second section*/
+section#second.second_member,
+section#second.second_member .sec_con {
+  margin-top: 0;
+}
+
+section#second.second_member .sec_con .sub_con {
+  margin-top: 160px;
+}
+
+section#second.second_member .sec_con .sub_con:nth-of-type(odd) .banner {
+  background-position: left;
+}
+
+section#second.second_member .sec_con .sub_con:nth-of-type(even) .banner {
+  background-position: right;
+}
+
+section#second.second_member .sec_con .sub_con:nth-of-type(odd) .banner .banner_tit {
+  left: 454px;
+}
+section#second.second_member .sec_con .sub_con:nth-of-type(even) .banner .banner_tit {
+  right: 459px;
+  left: auto;
+}
+
+section#second.second_member .sec_con .sub_con .banner1 {
+  background: url(../img/member/img-membership-01.png) no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .banner2 {
+  background: url(../img/member/img-membership-02.png) no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .banner3 {
+  background: url(../img/member/img-membership-03.png) no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .banner4 {
+  background: url(../img/member/img-membership-04.png) no-repeat;
+}
+
+/*icons*/
+
+/* section#second.second_member .sec_con .sub_con .items li .icon {
+  height: 128px;
+} */
+
+/* section#second.second_member .sec_con .sub_con .items li:first-child .text_p {
+  background: url(../img/icon-benefit-01.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(2) .icon {
+  background: url(../img/icon-benefit-02.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(3) .icon {
+  background: url(../img/icon-benefit-03.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(4) .icon {
+  background: url(../img/icon-benefit-04.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(5) .icon {
+  background: url(../img/icon-benefit-05.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(6) .icon {
+  background: url(../img/icon-benefit-06.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(7) .icon {
+  background: url(../img/icon-benefit-07.png) center no-repeat;
+} */
+
+section#second.second_member .sec_con .sub_con .items li:first-child {
+  background: url(../img/icon-benefit-01.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(2) {
+  background: url(../img/icon-benefit-02.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(3) {
+  background: url(../img/icon-benefit-03.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(4) {
+  background: url(../img/icon-benefit-04.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(5) {
+  background: url(../img/icon-benefit-05.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(6) {
+  background: url(../img/icon-benefit-06.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(7) {
+  background: url(../img/icon-benefit-07.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li {
+  height: 477px;
+  padding-top: 204px;
+  box-sizing: border-box;
+  margin-top: 91px;
+}
+
+section#second.second_member .sec_con .items .text_p {
+  margin-top: 0;
+}
+
+section#second.second_member .sec_con .sub_con .description_banner3 .row .row_text {
+  display: inline-block;
+  width: 38%;
+}
+section#second.second_member .sec_con .sub_con .description_banner3 .row .row_text:last-child {
+  display: inline-block;
+  width: 23%;
+}
+
+section#second.second_member .sec_con .sub_con .description_banner3 .row .row_text .row_text_p {
+  margin-top: 48px;
+}
+
+section#second.second_member .description_banner3 .row:last-child {
+  padding-top: 50px;
+}
+
+section#second.second_member .description_banner3 .row .add_p {
+  font-size: 24px;
+}
+
+section#second.second_member .sec_con .sub_con .process {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro {
+  width: 100%;
+  margin-top: 130px;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .left .des {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 128px;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .left {
+  width: 25%;
+  float: left;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right {
+  /* width: clac(100% - 230px); */
+  width: 75%;
+  float: left;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .text_tit {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .text_p {
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add {
+  overflow: hidden;
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 30px;
+  margin-top: 36px;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add > a {
+  display: block;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* section#second.second_member .sec_con .sub_con .process .row_pro:nth-of-type(4) .right .process_add dt {
+  width: 10%;
+} */
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add dd {
+  margin-left: 20px;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add dt,
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add dd {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: left;
+  float: left;
+}
+
+section#second.second_member .sub_con .process .row_pro .left {
+  height: 128px;
+}
+
+section#second.second_member .sub_con .process .row_pro:first-child .left {
+  background: url(../img/icon-join-01.png) center no-repeat;
+}
+
+section#second.second_member .sub_con .process .row_pro:nth-of-type(2) .left {
+  background: url(../img/icon-join-02.png) center no-repeat;
+}
+
+section#second.second_member .sub_con .process .row_pro:nth-of-type(3) .left {
+  background: url(../img/icon-join-03.png) center no-repeat;
+}
+section#second.second_member .sub_con .process .row_pro:nth-of-type(4) .left {
+  background: url(../img/icon-join-04.png) center no-repeat;
+}
+section#second.second_member .sub_con .process .row_pro:nth-of-type(5) .left {
+  background: url(../img/icon-join-05.png) center no-repeat;
+}
+
+/* section#second.second_member .sec_con .sub_con .process .row_pro .left .row_img {
+  display: inline-block;
+  text-align: center;
+} */

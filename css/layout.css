@@ -1,0 +1,372 @@
+@charset "UTF-8";
+
+/*main_banner*/
+
+.main_banner {
+  position: relative;
+  max-width: 1920px;
+  height: 712px;
+  margin-bottom: -712px;
+  margin: 0 auto;
+  background: url(../img/img-sub-main-visual-about.png) center no-repeat;
+}
+
+.main_banner2 {
+  background: url(../img/member/img-sub-main-visual-member.png) center no-repeat;
+}
+
+header {
+  overflow: hidden;
+  max-width: 1340px;
+  margin: 0 auto;
+  height: 90px;
+  line-height: 90px;
+  box-sizing: border-box;
+}
+
+.header_bg {
+  position: absolute;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 202px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.header_bg .line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 90px;
+  background: #969696;
+}
+
+.header_bg.on {
+  opacity: 1;
+}
+
+header h1,
+header nav,
+header .switch_lang {
+  display: inline-block;
+  overflow: hidden;
+}
+
+header h1,
+header .switch_lang {
+  position: relative;
+}
+
+header .switch_lang {
+  float: right;
+}
+
+header h1 {
+  height: 100%;
+  line-height: 90px;
+}
+
+header nav .nav {
+  margin-left: 375px;
+}
+
+/* header nav .nav:after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+
+header nav .nav > li {
+  padding-right: 112px;
+  float: left;
+  box-sizing: border-box;
+}
+
+header nav .nav > li:last-child {
+  padding-right: 0;
+}
+
+header nav .nav > li > a {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+}
+
+/* header nav .nav > li > a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  opacity: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+} */
+
+header nav .nav > li.on > a:after {
+  opacity: 1;
+}
+
+header nav .nav > li:last-child {
+  margin-right: 0;
+}
+
+header nav .nav > li > a,
+header .switch_lang {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*under_bar*/
+.under_bar {
+  position: absolute;
+  width: 100px;
+  top: 88px;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.under_bar.on {
+  opacity: 1;
+}
+
+/*.sub_gnb*/
+header .sub_gnb {
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 90px;
+  z-index: 20;
+  height: 112px;
+  line-height: 112px;
+  visibility: hidden;
+}
+
+header nav .nav li:first-child .sub_gnb {
+  margin-left: -440px;
+}
+
+header nav .nav li:nth-of-type(2) .sub_gnb {
+  margin-left: -109px;
+}
+header nav .nav li:nth-of-type(3) .sub_gnb {
+  margin-left: -192px;
+}
+
+header .sub_gnb.on {
+  visibility: visible;
+}
+
+header .sub_gnb:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header .sub_gnb > li {
+  float: left;
+  margin-left: 48px;
+}
+
+header .sub_gnb > li:first-child {
+  margin-left: 0;
+}
+
+header .sub_gnb li a {
+  color: #fff;
+}
+
+header .sub_gnb li a:hover {
+  font-weight: bold;
+}
+
+header .switch_lang:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header .switch_lang span {
+  float: left;
+  margin-right: 12px;
+}
+
+header .switch_lang span a {
+  color: #fff;
+}
+
+header .switch_lang span:nth-of-type(2) {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 4px;
+  background-color: white;
+  margin-top: 41px;
+  transform: translateY(3px);
+}
+
+header .switch_lang span:nth-of-type(2):after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  left: -3px;
+  top: -2px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+header .switch_lang:hover span:nth-of-type(2):after {
+  animation: switch 0.5s cubic-bezier(0.33, 1, 0.68, 1) infinite alternate;
+}
+
+@keyframes switch {
+  from {
+    left: -3px;
+  }
+  to {
+    left: 10px;
+  }
+}
+
+header .switch_lang span:last-child a {
+  margin-right: 0;
+  color: #999;
+}
+
+.main_banner .page_title {
+  max-width: 1340px;
+  margin: 0 auto;
+  font-size: 96px;
+  font-weight: bold;
+  margin-top: 230px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*footer*/
+footer {
+  position: relative;
+  height: 304px;
+  margin-top: 192px;
+  background-color: #000;
+}
+
+footer .back_to_top {
+  position: absolute;
+  top: -32px;
+  right: 40px;
+  width: 64px;
+  height: 64px;
+  background: url(../img/button-floating-top.png) center no-repeat;
+  font-size: 0;
+}
+
+footer .footer_inner {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+footer .footer_inner:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+footer .footer_inner .left,
+footer .footer_inner .right {
+  display: inline-block;
+}
+
+footer .footer_inner .left {
+  margin-top: 72px;
+  float: left;
+}
+
+footer .footer_inner .left .information p,
+footer .footer_inner .left .information a {
+  color: #fff;
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+footer .footer_inner .left .information a {
+  display: block;
+}
+
+footer .footer_inner .left .copyrights {
+  margin-top: 36px;
+  color: #666;
+  font-size: 14px;
+}
+
+footer .footer_inner .right {
+  position: relative;
+  margin-top: 74px;
+  float: right;
+}
+
+footer .footer_inner .right .cooperation {
+  padding-bottom: 10px;
+  width: 230px;
+  border-bottom: 1px solid #999;
+  color: #999;
+  cursor: pointer;
+}
+
+footer .footer_inner .right .cooperation:after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 6px;
+  background: url(../img/footer_select_arrow.png) center no-repeat;
+  background-size: contain;
+  margin-left: 113px;
+}
+
+footer .footer_inner .right .cooperation.on:after {
+  transform: rotate(180deg);
+}
+
+footer .footer_inner .right .cooperation_list {
+  position: absolute;
+  overflow: hidden;
+  bottom: 66px;
+  width: 231px;
+  height: 0;
+  background-color: #333;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+footer .footer_inner .right .cooperation_list.on {
+  height: 232px;
+}
+
+footer .footer_inner .right .cooperation_list li {
+  margin-top: 8px;
+  padding: 8px 24px;
+}
+
+footer .footer_inner .right .cooperation_list li:hover {
+  background-color: #111;
+}
+
+footer .footer_inner .right .cooperation_list li:first-child {
+  margin-top: 24px;
+}
+
+footer .footer_inner .right .cooperation_list li:last-child {
+  margin-bottom: 24px;
+}
+
+footer .footer_inner .right .cooperation_list li a {
+  color: #fff;
+}
