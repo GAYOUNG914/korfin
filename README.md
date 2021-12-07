@@ -1,10 +1,10 @@
-# introduce_page (포트폴리오 소개페이지)
-제가 만든 작업물들을 소개하는 포트폴리오 소개페이지입니다.<br>
-현재 계속 프로젝트를 추가, 수정중입니다.
+# Korfin (한국핀테크산업협회)
+Zeplin 으로 디자인을 받아 퍼블리싱 작업을 한 페이지입니다.
 
 ## Link
-* https://gayoung914.github.io/korfin/
-* https://gayoung914.github.io/korfin/index_member.html
+* subpages
+** https://gayoung914.github.io/korfin/
+** https://gayoung914.github.io/korfin/index_member.html
 
 
 ## Tool
