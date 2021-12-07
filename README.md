@@ -1,5 +1,6 @@
 # Korfin (한국핀테크산업협회)
 Zeplin 으로 디자인을 받아 퍼블리싱 작업을 한 페이지입니다.
+gnb, go to top 버튼, footer의 select box 등의 엘리먼트에 인터랙션을 구현해보았습니다.
 
 ## Link
 * subpages
