@@ -3,8 +3,8 @@ Zeplin 으로 디자인을 받아 퍼블리싱 작업을 한 페이지입니다.
 
 ## Link
 * subpages
-** https://gayoung914.github.io/korfin/
-** https://gayoung914.github.io/korfin/index_member.html
+  - https://gayoung914.github.io/korfin/
+  - https://gayoung914.github.io/korfin/index_member.html
 
 
 ## Tool
