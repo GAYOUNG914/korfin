@@ -4,46 +4,40 @@
 
 ## Link
 * https://gayoung914.github.io/korfin/
+* https://gayoung914.github.io/korfin/index_member.html
+
 
 ## Tool
 * HTML5
 * CSS3
 * SCSS
 * Jquery
-* gsap Plugin 
-* swiper Plugin
 
 ## Skill
-* 메인배너의 Interaction<br><br>
-👉 on fucntion에 movsemove method를 이용하였습니다.<br> mousemove 이벤트를 이용하여 기준을 잡고, gsap Plugin을 이용하여 보다 더 부드러운 animation을 구현해보았습니다.
+* GNB의 Interaction<br><br>
+👉 .nav > li에 호버를 하면 클래스가 붙으면서 GNB가 나타나고 언더바가 생성되어 호버 된 메뉴를 따라다니는 스크립트를 구현해보았습니다.
 ```
 $(function () {
-  $(window).on("mousemove", mouseMove);
-  function mouseMove(e) {
-    let position = (e.pageX - $(window).width() / 2) * 0.1;
-    //원점을 잡기 위한 방법
-    gsap.to(".spanSlow", { duration: 0.4, x: position });
-    gsap.to(".spanFast", { duration: 0.4, x: -position });
-  }
-});
-```
-* Header의 Interaction<br><br>
-👉 click method를 이용하여 a tag를 누르면 해당 해쉬태그가 있는 곳으로 이동할 수 있도록 코드를 작성해보았습니다.
-```
-$(function () {
-  //gnb 눌렀을 때 section 찾아가기
-  $(".gnb li a").click(function () {
-    console.log($(this.hash));
-    let thisElem = $(this.hash);
-    let offsetElem = thisElem.offset();
-    console.log(offsetElem.top);
-    $("html,body").stop();
-    $("html,body").animate({ scrollTop: offsetElem.top }, 1000);
+  //drop down & underbar event
+  $(".nav > li").mouseover(function () {
+    let leftValue = $(this).offset().left - 10,
+      listWidth = $(this).width() + 20;
+    $(this).addClass("on");
+    $(this).find(".sub_gnb").addClass("on");
+    $(".header_bg").addClass("on");
+    $(".under_bar").addClass("on");
+    $(".under_bar").css({ left: leftValue, width: listWidth });
   });
-});
+  $(".header_bg").mouseout(function () {
+    $(".nav > li").removeClass("on");
+    $(".nav > li > .sub_gnb").removeClass("on");
+    $(".header_bg").removeClass("on");
+    $(".under_bar").removeClass("on");
+  });
+  $(".nav > li > .sub_gnb").mouseout(function () {
+    $(".nav > li").removeClass("on");
+    $(".nav > li > .sub_gnb").removeClass("on");
+    $(".header_bg").removeClass("on");
+    $(".under_bar").removeClass("on");
+  });
 ```
-
-## License
-* design by 김가영
-
-
